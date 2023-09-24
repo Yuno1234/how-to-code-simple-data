@@ -7,6 +7,7 @@
 (sqrt (+ (sqr 3) (sqr 4)))
 
 
+
 ;; function-definitions
 ;(above (circle 40 "solid" "red")
 ;       (circle 40 "solid" "yellow")
@@ -17,10 +18,12 @@
 (above (bulb "red") (bulb "yellow") (bulb "green"))
 
 
+
 ;; more-arithmetic-expression
 (* 3 5 7)
 
 (* (* 3 5) 7)
+
 
 
 ;; tile
@@ -28,6 +31,7 @@
                (square 20 "solid" "yellow"))
        (beside (square 20 "solid" "yellow")
                (square 20 "solid" "blue")))
+
 
 
 ;; compare-images
@@ -46,6 +50,7 @@
         (image-height IMAGE2)))
 
 
+
 ;; more-foo-evaluation
 (foo (+ 3 4))
 
@@ -56,12 +61,14 @@
 49
 
 
+
 ;; function-writing
 
 (define (larger x y)
   (if (> x y)
       x
       y))
+
 
 
 ;; foo-evaluation

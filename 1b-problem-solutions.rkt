@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-beginner-reader.ss" "lang")((modname 2b-problem-solutions) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname 1b-problem-solutions) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/image)
 
 ;; double
@@ -19,6 +19,7 @@
   (* 2 n))
 
 
+
 ;; pluralize
 
 ; String -> String
@@ -33,6 +34,7 @@
 
 (define (pluralize str)        ;function body
   (string-append str "s"))
+
 
 
 ;; yell
@@ -51,6 +53,7 @@
   (string-append str "!"))
 
 
+
 ;; area
 
 ; Number -> Number
@@ -65,6 +68,7 @@
 
 (define (area s)       ;function body
   (* s s))
+
 
 
 ;; image-area
@@ -82,6 +86,7 @@
   (* (image-width img) (image-height img)))
 
 
+
 ;; tall
 
 ; Image -> Boolean
@@ -96,6 +101,7 @@
 ;  (... img))
 
 (define (tall? img) (> (image-height img) (image-width img)))  ;function body
+
 
 
 ;;less-than-five
@@ -115,6 +121,7 @@
 
 (define (less-than-5? s)   ;function body
   (< (string-length s) 5))
+
 
 
 ;; boxify
@@ -142,6 +149,7 @@
                       "outline"
                       "black")
            i))
+
 
 
 ;; double-error
