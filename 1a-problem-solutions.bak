@@ -52,8 +52,6 @@
 
 
 ;; more-foo-evaluation
-(define (foo x) (* x x))
-
 (foo (+ 3 4))
 
 (foo 7)
@@ -74,14 +72,9 @@
 
 
 ;; foo-evaluation
-(define (bar s)
-  (if (string=? (substring s 0 1) "a")
-      (string-append s "a")
-      s))
+(foo (substring "abcde" 0 3))
 
-(bar (substring "abcde" 0 3))
-
-(bar "abc")
+(foo "abc")
 
 (if (string=? (substring "abc" 0 1) "a")
     (string-append "abc" "a")
