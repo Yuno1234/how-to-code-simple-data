@@ -43,14 +43,14 @@
 ;; =================
 ;; Functions:
 
-;; WS -> WS
+;; Flower -> Flower
 ;; start the world with (main (make-flower (/ WIDTH 2) (/ HEIGHT 2) 0))
 ;; 
-(define (main ws)
-  (big-bang ws                          ; Flower
+(define (main f)
+  (big-bang f                           ; Flower
             (on-tick   next-flower)     ; Flower -> Flower
             (to-draw   render-flower)   ; Flower -> Image
-            (on-mouse  handle-mouse)))      ; Flower Integer Integer MouseEvent -> Flower
+            (on-mouse  handle-mouse)))  ; Flower Integer Integer MouseEvent -> Flower
 
 ;; Flower -> Flower
 ;; produce the next ...

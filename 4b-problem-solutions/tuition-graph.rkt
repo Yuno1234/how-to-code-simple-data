@@ -45,7 +45,7 @@
   (cond [(empty? los) (...)]
         [else
          (... (fn-for-school (first los))
-              (rest los))]))
+              (fn-for-los (rest los)))]))
 
 ; Template rules used:
 ;  - one of: 2 cases
